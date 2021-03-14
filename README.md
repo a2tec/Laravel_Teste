@@ -15,3 +15,6 @@ php artisan make:controller Hello
 
 # Migrate
 php artisan migrate:install
+
+# Model
+php artisan make:model -m
