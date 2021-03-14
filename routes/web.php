@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hello', [\App\Http\Controllers\Hello::class, 'hello']);
+Route::get('/helloword/{query}', [\App\Http\Controllers\Hello::class, 'helloWord']);
